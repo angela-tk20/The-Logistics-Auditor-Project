@@ -27,11 +27,12 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-#Read me
-*.md
 
 # Any stray CSV files
 *.csv
 
 # Any stray PNG files
 *.png
+
+ #power bi folder
+ Power Bi Files/
