@@ -1,0 +1,37 @@
+# Raw dataset : too large for GitHub
+Data/
+
+# Merged data folder
+Merged_Olist_Data/
+
+# Charts folder
+Charts/
+
+# iframe figures
+iframe_figures/
+
+# Python virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# PyCharm project files
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+#Read me
+*.md
+
+# Any stray CSV files
+*.csv
+
+# Any stray PNG files
+*.png
