@@ -26,9 +26,9 @@ This audit solves that problem by answering three critical business questions:
 
 | Question | Answer Found |
 |---|---|
-| Is this a nationwide or regional problem? | Regional — concentrated in AL, MA and PI |
-| Are late deliveries causing bad reviews? | Yes — Super Late orders average just 1.78 stars vs 4.29 for On Time |
-| Is the problem getting better or worse? | Worse — monthly trend is worsening over time |
+| Is this a nationwide or regional problem? | Regional : concentrated in AL, MA and PI |
+| Are late deliveries causing bad reviews? | Yes : Super Late orders average just 1.78 stars vs 4.29 for On Time |
+| Is the problem getting better or worse? | Worse : monthly trend is worsening over time |
 
 ### Business Value Delivered
 | Before Audit | After Audit |
@@ -49,7 +49,7 @@ what is causing the problem, and how urgent the situation is.
 |-------------------|---|
 | Notebook          |  [GitHub Notebooks](https://github.com/angela-tk20/The-Logistics-Auditor-Project) |
 | Dashboard         | [Power BI Public](https://app.fabric.microsoft.com/view?r=eyJrIjoiNTJiNmExNTgtNGRhMC00MjAzLWJlYzItNTEzZGQ0Mjg0NjExIiwidCI6ImIyMGE4ZjRkLTBkNmEtNGYyZS04M2EyLTE4MWM5NjhmODg4MiIsImMiOjl9) |
-| Presentation      | [Google Slides](#) |
+| Presentation      | [Google Slides](https://amalitech-my.sharepoint.com/:p:/p/angela_tenkorang/IQCRNMkO9r0vRorHm6KX8ar8AVn9amW84oK4BT5SlIdABZ0?e=DljrCG&nav=eyJzSWQiOjI1Nn0) |
 | Video Walkthrough | [YouTube](#) |
 
 
@@ -93,7 +93,7 @@ careful joining to avoid data quality issues:
   Portuguese and joined with `product_category_name_translation.csv` 
   to produce English category names for the dashboard.
 
-### Candidate's Choice — Monthly Delivery Trend
+### Candidate's Choice : Monthly Delivery Trend
 I added a monthly late delivery rate trend analysis to show whether 
 Veridi's over-promising problem is getting better or worse over time. 
 This feature matters to the business because if the late delivery rate 
@@ -134,4 +134,64 @@ The-Logistics-Auditor-Project/
 │   ├── product_translation.ipynb             ← Bonus Story 5
 │   └── candidate_choice_delivery_trend.ipynb ← Candidate's Choice
 └── README.md
+└── veridi_logistics_presentation.ppts
 ```
+
+## G. How to Clone and Run This Project
+
+### Prerequisites
+Make sure you have the following installed on your machine:
+- Python 3.9 or higher
+- pip 
+- Jupyter Notebook or JupyterLab
+- Git
+
+### Step 1 - Clone the Repository
+```bash
+git clone https://github.com/angela-tk20/The-Logistics-Auditor-Project.git
+cd The-Logistics-Auditor-Project
+```
+
+### Step 2 - Create a Virtual Environment
+```bash
+python -m venv venv
+```
+
+Activate it:
+- **Windows:** `venv\Scripts\activate`
+- **Mac/Linux:** `source venv/bin/activate`
+
+### Step 3 - Install Required Packages
+```bash
+pip install pandas numpy matplotlib seaborn plotly streamlit openpyxl jupyter nbconvert
+```
+
+### Step 4 - Download the Dataset
+The raw dataset is not included in this repository due to file size.
+Download it manually from Kaggle:
+
+1. Go to: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+2. Download and unzip the dataset
+3. Place all CSV files inside a folder called `Data/` in the project root
+
+### Step 5 - Run the Notebooks in Order
+Open Jupyter and run each notebook in this order:
+
+| Order | Notebook | Purpose |
+|-------|----------|---------|
+| 1 | `load_and_join_data.ipynb` | Build master orders table |
+| 2 | `delay_calculator.ipynb` | Calculate delivery delays |
+| 3 | `geographic_delivery_analysis.ipynb` | Map late deliveries by state |
+| 4 | `sentiment_correlation_analysis.ipynb` | Prove link to bad reviews |
+| 5 | `product_translation.ipynb` | Translate product categories |
+| 6 | `candidate_choice_delivery_trend.ipynb` | Monthly trend analysis |
+
+### Required CSV Files from Kaggle
+Make sure these files are in your `Data/` folder:
+- `olist_orders_dataset.csv`
+- `olist_order_reviews_dataset.csv`
+- `olist_customers_dataset.csv`
+- `olist_products_dataset.csv`
+- `olist_order_items_dataset.csv`
+- `product_category_name_translation.csv`
+
