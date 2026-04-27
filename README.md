@@ -26,9 +26,9 @@ This audit solves that problem by answering three critical business questions:
 
 | Question | Answer Found |
 |---|---|
-| Is this a nationwide or regional problem? | Regional — concentrated in AL, MA and PI |
-| Are late deliveries causing bad reviews? | Yes — Super Late orders average just 1.78 stars vs 4.29 for On Time |
-| Is the problem getting better or worse? | Worse — monthly trend is worsening over time |
+| Is this a nationwide or regional problem? | Regional : concentrated in AL, MA and PI |
+| Are late deliveries causing bad reviews? | Yes : Super Late orders average just 1.78 stars vs 4.29 for On Time |
+| Is the problem getting better or worse? | Worse : monthly trend is worsening over time |
 
 ### Business Value Delivered
 | Before Audit | After Audit |
@@ -93,7 +93,7 @@ careful joining to avoid data quality issues:
   Portuguese and joined with `product_category_name_translation.csv` 
   to produce English category names for the dashboard.
 
-### Candidate's Choice — Monthly Delivery Trend
+### Candidate's Choice : Monthly Delivery Trend
 I added a monthly late delivery rate trend analysis to show whether 
 Veridi's over-promising problem is getting better or worse over time. 
 This feature matters to the business because if the late delivery rate 
@@ -134,4 +134,5 @@ The-Logistics-Auditor-Project/
 │   ├── product_translation.ipynb             ← Bonus Story 5
 │   └── candidate_choice_delivery_trend.ipynb ← Candidate's Choice
 └── README.md
+└── veridi_logistics_presentation.ppts
 ```
