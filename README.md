@@ -136,3 +136,62 @@ The-Logistics-Auditor-Project/
 └── README.md
 └── veridi_logistics_presentation.ppts
 ```
+
+## G. How to Clone and Run This Project
+
+### Prerequisites
+Make sure you have the following installed on your machine:
+- Python 3.9 or higher
+- pip 
+- Jupyter Notebook or JupyterLab
+- Git
+
+### Step 1 - Clone the Repository
+```bash
+git clone https://github.com/angela-tk20/The-Logistics-Auditor-Project.git
+cd The-Logistics-Auditor-Project
+```
+
+### Step 2 - Create a Virtual Environment
+```bash
+python -m venv venv
+```
+
+Activate it:
+- **Windows:** `venv\Scripts\activate`
+- **Mac/Linux:** `source venv/bin/activate`
+
+### Step 3 - Install Required Packages
+```bash
+pip install pandas numpy matplotlib seaborn plotly streamlit openpyxl jupyter nbconvert
+```
+
+### Step 4 - Download the Dataset
+The raw dataset is not included in this repository due to file size.
+Download it manually from Kaggle:
+
+1. Go to: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+2. Download and unzip the dataset
+3. Place all CSV files inside a folder called `Data/` in the project root
+
+### Step 5 - Run the Notebooks in Order
+Open Jupyter and run each notebook in this order:
+
+| Order | Notebook | Purpose |
+|-------|----------|---------|
+| 1 | `load_and_join_data.ipynb` | Build master orders table |
+| 2 | `delay_calculator.ipynb` | Calculate delivery delays |
+| 3 | `geographic_delivery_analysis.ipynb` | Map late deliveries by state |
+| 4 | `sentiment_correlation_analysis.ipynb` | Prove link to bad reviews |
+| 5 | `product_translation.ipynb` | Translate product categories |
+| 6 | `candidate_choice_delivery_trend.ipynb` | Monthly trend analysis |
+
+### Required CSV Files from Kaggle
+Make sure these files are in your `Data/` folder:
+- `olist_orders_dataset.csv`
+- `olist_order_reviews_dataset.csv`
+- `olist_customers_dataset.csv`
+- `olist_products_dataset.csv`
+- `olist_order_items_dataset.csv`
+- `product_category_name_translation.csv`
+
