@@ -50,7 +50,7 @@ what is causing the problem, and how urgent the situation is.
 | Notebook          |  [GitHub Notebooks](https://github.com/angela-tk20/The-Logistics-Auditor-Project) |
 | Dashboard         | [Power BI Public](https://app.fabric.microsoft.com/view?r=eyJrIjoiNTJiNmExNTgtNGRhMC00MjAzLWJlYzItNTEzZGQ0Mjg0NjExIiwidCI6ImIyMGE4ZjRkLTBkNmEtNGYyZS04M2EyLTE4MWM5NjhmODg4MiIsImMiOjl9) |
 | Presentation      | [Google Slides](https://amalitech-my.sharepoint.com/:p:/p/angela_tenkorang/IQCRNMkO9r0vRorHm6KX8ar8AVn9amW84oK4BT5SlIdABZ0?e=DljrCG&nav=eyJzSWQiOjI1Nn0) |
-| Video Walkthrough | [YouTube](https://www.loom.com/share/bcb09b3bb60148c7adc253ce3ac29457) |
+| Video Walkthrough | [Loom](https://www.loom.com/share/bcb09b3bb60148c7adc253ce3ac29457) |
 
 
 ---
